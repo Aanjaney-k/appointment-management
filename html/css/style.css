@@ -1,0 +1,246 @@
+/* =========================
+   ANIMATED GRADIENT BACKGROUND
+========================= */
+
+body {
+    background: linear-gradient(-45deg, #0f2027, #203a43, #141e30, #000000);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    color: #eaeaea;
+    font-family: 'Segoe UI', sans-serif;
+    padding-bottom: 90px;
+    transition: all 0.4s ease;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* =========================
+   GLASSMORPHISM CARDS
+========================= */
+
+.custom-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease;
+    color: white;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(79, 195, 247, 0.3);
+}
+
+/* =========================
+   INPUT FIELDS
+========================= */
+
+.custom-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #4fc3f7;
+    box-shadow: 0 0 15px rgba(79, 195, 247, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.custom-input::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+/* =========================
+   SLOT BUTTONS
+========================= */
+
+.slot-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 14px;
+    padding: 8px 14px;
+    transition: 0.3s ease;
+}
+
+.slot-btn:hover {
+    background: linear-gradient(135deg, #4fc3f7, #039be5);
+    color: black;
+    transform: scale(1.08);
+}
+
+.slot-btn.disabled {
+    background: rgba(255, 255, 255, 0.04);
+    color: #777;
+    pointer-events: none;
+}
+
+/* =========================
+   MAIN BUTTON
+========================= */
+
+.book-btn {
+    background: linear-gradient(135deg, #4fc3f7, #039be5);
+    border: none;
+    border-radius: 14px;
+    padding: 10px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.book-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
+}
+
+/* =========================
+   BOTTOM NAVBAR (GLASS STYLE)
+========================= */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* NAV ITEMS */
+
+.nav-item {
+    text-align: center;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.nav-item i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.nav-item:hover {
+    color: #4fc3f7;
+    transform: scale(1.1);
+}
+
+/* CENTER HOME BUTTON */
+
+.home-btn {
+    background: linear-gradient(135deg, #4fc3f7, #039be5);
+    color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    box-shadow: 0 0 25px rgba(79, 195, 247, 0.7);
+    transition: 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: scale(1.12);
+}
+
+.home-btn i {
+    font-size: 26px;
+}
+
+/* =========================
+   QUEUE TOKENS
+========================= */
+
+.queue-box {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 15px 22px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    min-width: 65px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease;
+}
+
+.queue-box:hover {
+    background: linear-gradient(135deg, #4fc3f7, #039be5);
+    color: black;
+    transform: translateY(-4px);
+}
+
+/* =========================
+   LARGE TOKEN DISPLAY
+========================= */
+
+.display-3 {
+    font-size: 70px;
+    text-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
+}
+
+/* =========================
+   TABLE STYLING
+========================= */
+
+.table-dark {
+    background: transparent;
+}
+
+.table-dark th,
+.table-dark td {
+    color: #eaeaea;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+
+    .display-3 {
+        font-size: 50px;
+    }
+
+    .queue-box {
+        font-size: 18px;
+        padding: 12px 16px;
+    }
+
+    .home-btn {
+        width: 52px;
+        height: 52px;
+    }
+}
